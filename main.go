@@ -26,7 +26,7 @@ func TeleBotMain(data telebot.UserData, key telebot.KeyData, Info *telebot.InfoV
 	if Info.State == "nothing" {
 		switch strings.ToLower(data.UserMessange) {
 
-		case "Привет":
+		case "привет":
 			messange = telebot.HelloAnswer[Info.CurrAnsCount]
 			if Info.CurrAnsCount >= len(telebot.HelloAnswer)-1 {
 				Info.CurrAnsCount = 0
