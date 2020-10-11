@@ -23,7 +23,7 @@ func TeleBotMain(data telebot.UserData, key telebot.KeyData, Info *telebot.InfoV
 		data.UserName, data.ChatID, data.UserMessange)
 
 	if Info.State == "nothing" {
-		switch data.UserMessange {
+		switch strings.ToLower(data.UserMessange) {
 
 		case "Привет":
 			messange = telebot.HelloAnswer[Info.CurrAnsCount]
