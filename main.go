@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	htmlparser "./gethtml"
-	telebot "./telegramBot"
+	htmlparser "github.com/mo0nchild/telebot-golang/gethtml"
+	telebot "github.com/mo0nchild/telebot-golang/telegramBot"
 )
 
 var (
@@ -27,7 +27,7 @@ func TeleBotMain(data telebot.UserData, key telebot.KeyData, Info *telebot.InfoV
 
 		case "Привет":
 			messange = telebot.HelloAnswer[Info.CurrAnsCount]
-			if Info.CurrAnsCount >= len(telebot.HelloAnswer)-2 {
+			if Info.CurrAnsCount >= len(telebot.HelloAnswer)-1 {
 				Info.CurrAnsCount = 0
 			} else {
 				Info.CurrAnsCount++

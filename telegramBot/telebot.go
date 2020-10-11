@@ -46,8 +46,8 @@ var HelloAnswer = [3]string{"Привет Тварь!", "Приветствую 
 
 //BotLoop is function to set loop logic telegram bot
 func BotLoop(data KeyData, botLogic func(UserData, KeyData, *InfoVariable)) {
-	fmt.Println("------------------NEW_UPDATE------------------")
 	for update := range data.Updates {
+		fmt.Println("------------------NEW_UPDATE------------------")
 		if update.Message == nil {
 			continue
 		}
