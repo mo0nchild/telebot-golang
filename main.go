@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"strings"
 
 	htmlparser "github.com/mo0nchild/telebot-golang/gethtml"
 	telebot "github.com/mo0nchild/telebot-golang/telegramBot"
