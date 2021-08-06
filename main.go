@@ -11,9 +11,9 @@ import (
 
 var (
 	//BotToken is using to access the HTTP API
-	BotToken string = "1307123555:AAHq9f6uvdak22rHe6HKEIDFQ2rElBnJ2E0"
+	BotToken string = "your bot token"
 	//AdminID is using to get admin privilege
-	AdminID  int64 = 954764447
+	AdminID  int64 = "your admin id"
 	messange string
 )
 
